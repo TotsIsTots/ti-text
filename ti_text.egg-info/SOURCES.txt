@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+ti_text.egg-info/PKG-INFO
+ti_text.egg-info/SOURCES.txt
+ti_text.egg-info/dependency_links.txt
+ti_text.egg-info/entry_points.txt
+ti_text.egg-info/top_level.txt

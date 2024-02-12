@@ -1,0 +1,2 @@
+[console_scripts]
+ti-text = ti_text:main

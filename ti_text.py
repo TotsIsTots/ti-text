@@ -126,12 +126,14 @@ def convert(file_path, program_name):
         print("ERROR: File is not type PROGRAM")
     else:
       convert_text_to_8xp(file_path, program_name)
-    
+      
+def main():
+    parser = argparse.ArgumentParser(description='Convert .8xp files to text and vice versa.')
+    parser.add_argument('file_path', help='The path to the file to convert.')
+    parser.add_argument('program_name', help='The name of the program.')
+    args = parser.parse_args()
+
+    convert(args.file_path, args.program_name)
 
 if __name__ == '__main__':
-  # take args from command line
-  argparse = argparse.ArgumentParser()
-  argparse.add_argument("file_path", help="path to file")
-  argparse.add_argument("program_name", help="name of program")
-  args = argparse.parse_args()
-  convert(args.file_path, args.program_name)
+    main()
